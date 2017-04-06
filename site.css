@@ -2,6 +2,12 @@ html{
 	background: #88DEE8;
 }
 
+
+#page {
+	
+	
+}
+
 #head{
 	background: #FF877A;
 	height:110px;
@@ -16,8 +22,7 @@ html{
 
 #bar{
 	list-style-type: none;
-	margin:1;
-	width: 200px;
+	margin:0;
 	padding: 10;
 	overflow: hidden;
 	background-color: black;
@@ -33,6 +38,27 @@ li a{
 	font-family: verdana;
 	text-align: center;
 	padding: 14px 16px;
+	
+}
+
+#button {
+	color: #4CAF50; /* Green */
+}
+#b1{
+	font-family: verdana;
+	text-align: left;
+	Padding: 10px;
+	
+}
+
+#foot{
+	position: fixed;
+	bottom: 0px;
+	height: 40px;
+	width: 110%;
+	font-family: calibri;
+	background: #98FB98;
+	
 	
 }
 
