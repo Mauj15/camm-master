@@ -7,14 +7,16 @@ function onDeviceReady() {
 }
 
 function capturePhoto() {
-	navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-    destinationType: Camera.DestinationType.FILE_URI });
+	navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 100,
+	destinationType: destinationType.DATA_URL });
+}
 	
-function onSuccess(imageURI) {
-    var image = document.getElementById('myImage');
-    image.src = imageURI;
+function onPhotoDataSuccess(imageData) {
+	var image = document.getElementById('image');
+	image.style.display = 'block';
+	image.src = "data:image/jpeg;base64," + imageData;
 }
 
 function onFail(message) {
-    alert('Failed because: ' + message);
+      alert('Failed because: ' + message);
 }
