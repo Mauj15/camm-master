@@ -1,0 +1,64 @@
+html{
+	background: #88DEE8;
+}
+
+
+#page {
+	
+	
+}
+
+#head{
+	background: #FF877A;
+	height:110px;
+	border-style: solid;
+	border-color: yellow;
+	font-family: verdana;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	
+}
+
+#bar{
+	list-style-type: none;
+	margin:0;
+	padding: 10;
+	overflow: hidden;
+	background-color: black;
+	
+}
+li{
+	float:left;
+
+}
+li a{
+	display: block;
+	color:white;
+	font-family: verdana;
+	text-align: center;
+	padding: 14px 16px;
+	
+}
+
+#button {
+	color: #4CAF50; /* Green */
+}
+#b1{
+	font-family: verdana;
+	text-align: left;
+	Padding: 10px;
+	
+}
+
+#foot{
+	position: fixed;
+	bottom: 0px;
+	height: 40px;
+	width: 110%;
+	font-family: calibri;
+	background: #98FB98;
+	
+	
+}
+
