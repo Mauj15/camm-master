@@ -1,5 +1,4 @@
-
-var destinationType; //used sets what should be returned (image date OR file path to image for example)
+var destinationType; 
 
 document.addEventListener("deviceready",onDeviceReady,false);
 
@@ -8,16 +7,14 @@ function onDeviceReady() {
 }
 
 function capturePhoto() {
-	navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 100,
-	destinationType: destinationType.DATA_URL });
-}
+	navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+    destinationType: Camera.DestinationType.FILE_URI });
 	
-function onPhotoDataSuccess(imageData) {
-	var image = document.getElementById('image');
-	image.style.display = 'block';
-	image.src = "data:image/jpeg;base64," + imageData;
+function onSuccess(imageURI) {
+    var image = document.getElementById('myImage');
+    image.src = imageURI;
 }
 
 function onFail(message) {
-      alert('Failed because: ' + message);
+    alert('Failed because: ' + message);
 }
